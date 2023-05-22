@@ -22,8 +22,8 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "dumi": "^2.1.23",
-    "father": "^4.1.9",
+    "dumi": "^2.2.0",
+    "father": "^4.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
