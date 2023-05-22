@@ -1,0 +1,12 @@
+node_modules/
+.eslintrc.js
+coverage/
+**/node_modules/
+**/dockerfile
+scripts/
+**/**.tpl
+**/es/
+**/lib/
+/config/
+README.md
+resolveEntry.ts

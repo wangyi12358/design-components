@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "target": "esnext",
+    "jsx": "preserve",
+    "baseUrl": "./",
+    "paths": {
+      "@@/*": [".dumi/tmp/*"],
+      "ui": ["./packages/ui/src/index.ts"],
+      "utils": ["./packages/utils/src/index.ts"]
+    },
+    "plugins": [{ "transform": "typescript-transform-paths", "afterDeclarations": true }]
+  }
+}

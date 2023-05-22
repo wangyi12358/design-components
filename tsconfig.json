@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.base.json",
+  "exclude": ["**/**.tpl"],
+  "include": [
+    "typings.d.ts",
+    "**/mock/**/*",
+    "**/src/**/*",
+    "**/docs/**/*",
+    "scripts/**/*",
+    "**/demos",
+    ".eslintrc.js",
+    "tests",
+    "jest.config.js",
+    "**/fixtures",
+    "**/__tests__/*",
+    "packages/descriptions/src/demos/.tsx"
+  ]
+}
