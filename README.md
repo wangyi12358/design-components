@@ -1,16 +1,14 @@
 # Design components
 
----
-
-[TOC]
-
 ## 📦 Quick start
+
 ```bash
 $ pnpm i
 $ pnpm start
 ```
 
 ## ⌨️ Publish
+
 ```bash
 $ pnpm run release
 
@@ -22,6 +20,7 @@ $ pnpm run exit:beta
 ```
 
 ## 🔗 Links
+
 - [dumi](https://d.umijs.org/)
 - [pnpm](https://pnpm.io/)
 - [changesets](https://github.com/changesets/changesets)
