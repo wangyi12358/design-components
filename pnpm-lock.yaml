@@ -15,6 +15,7 @@ importers:
       '@types/react-dom': ^18.2.4
       dumi: ^2.2.0
       father: ^4.2.0
+      husky: ^8.0.3
       react: ^18.2.0
       react-dom: ^18.2.0
       typescript: ^5.0.4
@@ -33,6 +34,7 @@ importers:
       '@commitlint/config-conventional': 16.2.4
       '@types/react': 18.2.6
       '@types/react-dom': 18.2.4
+      husky: 8.0.3
       typescript: 5.0.4
 
 packages:
@@ -7283,6 +7285,12 @@ packages:
   /humps/2.0.1:
     resolution: {integrity: sha512-E0eIbrFWUhwfXJmsbdjRQFQPrl5pTEoKlz163j1mTqqUnU9PgR4AgB8AIITzuB3vLBdxZXyZ9TDIrwB2OASz4g==}
     dev: false
+
+  /husky/8.0.3:
+    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
 
   /iconv-lite/0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}

@@ -4,11 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "preinstall": "npx only-allow pnpm"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": "eslint --ext .js,.jsx,.ts,.tsx",
+    "**/*.{js,jsx,tsx,ts,md,json}": [
+      "prettier --write"
+    ]
+  },
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@babel/preset-env": "^7.18.10",
@@ -19,6 +27,7 @@
     "@commitlint/config-conventional": "^16.0.0",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
+    "husky": "^8.0.3",
     "typescript": "^5.0.4"
   },
   "dependencies": {
