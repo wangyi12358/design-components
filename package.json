@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "preinstall": "npx only-allow pnpm",
-    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider dumi dev",
+    "start": "dumi dev",
     "enter:beta": "changeset pre enter beta",
     "exit:beta": "changeset pre exit",
     "tsc": "tsc --noEmit"
@@ -31,6 +31,7 @@
     "@commitlint/config-conventional": "^16.0.0",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
+    "@umijs/fabric": "^2.14.1",
     "husky": "^8.0.3",
     "typescript": "^5.0.4"
   },

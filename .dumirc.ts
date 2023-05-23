@@ -12,13 +12,9 @@ const pkgList = readdirSync(join(process.cwd(), 'packages')).filter(
 );
 
 const alias = pkgList.reduce((pre, pkg) => {
-  if (pkg === 'icons') {
-    pre['@zbanx/icons'] = join(process.cwd(), 'packages', pkg, 'src');
-  } else {
-    pre[`@zbanx-coding/components-${pkg}`] = join(process.cwd(), 'packages', pkg, 'src');
-  }
   return {
     ...pre,
+    [`@design/${pkg}`]: join(process.cwd(), 'packages', pkg, 'src'),
   };
 }, {});
 
@@ -42,37 +38,21 @@ export default defineConfig({
         link: '/guide/quick-start',
       },
       {
-        title: '基础组件',
-        link: '/basic-components/annulargradientchart',
-      },
-      {
-        title: '业务组件',
-        link: '/business-components/creatorinfo',
-      },
-      {
-        title: '元组件',
-        link: '/meta-components/metatable',
-      },
-      {
-        title: '图表组件',
-        link: '/charts-components/annularchart',
+        title: '组件',
+        link: '/components/button',
       },
       {
         title: 'Utils',
         link: '/utils/case',
       },
       {
-        title: 'Icons',
-        link: '/icons',
-      },
-      {
         title: '仓库',
-        link: 'https://zbanx.coding.net/p/frontend-templates/d/zbanx-pc-components/git',
+        link: 'https://github.com/wangyi12358/design-components',
       },
     ],
-    footer: 'Zbanx.com | Copyright © 2021<br />Powered by [zbanx](https://zbanx.com)',
+    footer: 'Design Components',
   },
-  favicons: ['https://g.zbanx.com/assets/ico/favicon.ico'],
+  favicons: [],
   outputPath: 'docs-dist',
   alias,
   mock: {},
@@ -81,12 +61,7 @@ export default defineConfig({
     // entryFile: './resolveEntry.ts',
     docDirs: ['docs'],
     atomDirs: [
-      { type: 'business-component', dir: 'packages/business/src/components' },
-      { type: 'charts-component', dir: 'packages/charts/src/components' },
-      { type: 'meta-component', dir: 'packages/meta/src/components' },
-      { type: 'basic-component', dir: 'packages/basic/src/components' },
-      { type: 'shared-component', dir: 'packages/shared/src/components' },
-      { type: 'icons', dir: 'packages/icons/src' },
+      { type: 'component', dir: 'packages/ui/src/components' },
       { type: 'utils', dir: 'packages/utils/src' },
     ],
     codeBlockMode: 'passive',
@@ -107,19 +82,4 @@ export default defineConfig({
   // mfsu: !isDeploy ? {} : undefined,
   // 关闭 dynamicImport, 只会打包成一个umi.js文件, 用于减少线上环境serverless请求数
   extraBabelPlugins: isProduction ? ['babel-plugin-dynamic-import-node'] : [],
-  // chainWebpack: (memo: any) => {
-  //   memo.merge({
-  //     module: {
-  //       rules: [
-  //         {
-  //           loader: 'worker-loader',
-  //           options: {
-  //             publicPath:
-  //               'https://zbanx-banker-image.oss-cn-chengdu.aliyuncs.com/docs/pc-components/20221226193702/',
-  //           },
-  //         },
-  //       ],
-  //     },
-  //   });
-  // },
 });
