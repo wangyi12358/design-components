@@ -58,8 +58,13 @@ importers:
   packages/utils:
     specifiers:
       '@babel/runtime': ^7.12.0
+      '@types/lodash': ^4.14.194
+      lodash: ^4.17.21
     dependencies:
       '@babel/runtime': 7.21.5
+      lodash: 4.17.21
+    devDependencies:
+      '@types/lodash': 4.14.194
 
 packages:
 
@@ -3310,6 +3315,10 @@ packages:
     dependencies:
       '@types/node': 20.1.4
     dev: false
+
+  /@types/lodash/4.14.194:
+    resolution: {integrity: sha512-r22s9tAS7imvBt2lyHC9B8AGwWnXaYb1tY09oyLkXDs4vArpYJzw09nj8MLx5VfciBPGIb+ZwG0ssYnEPJxn/g==}
+    dev: true
 
   /@types/mdast/3.0.11:
     resolution: {integrity: sha512-Y/uImid8aAwrEA24/1tcRZwpxX3pIFTSilcNDKSPn+Y2iDywSEachzRuvgAYYLR3wpGXAsMbv5lvKLDZLeYPAw==}
