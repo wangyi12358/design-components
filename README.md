@@ -19,6 +19,11 @@ $ pnpm run enter:beta
 $ pnpm run exit:beta
 ```
 
+## Apps and Packages
+- [ui](packages%2Fui): Component library code
+- [provider](packages%2Fprovider): i18n
+- [utils](packages%2Futils): A collection of utility functions
+
 ## 🔗 Links
 
 - [dumi](https://d.umijs.org/)
