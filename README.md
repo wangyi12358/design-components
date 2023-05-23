@@ -25,3 +25,5 @@ $ pnpm run exit:beta
 - [pnpm](https://pnpm.io/)
 - [changesets](https://github.com/changesets/changesets)
 - [father](https://github.com/umijs/father)
+- [tailwindcss](https://tailwindcss.com/)
+- [daisyui](https://daisyui.com/)

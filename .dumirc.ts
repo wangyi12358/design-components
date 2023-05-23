@@ -30,8 +30,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 
 export default defineConfig({
   themeConfig: {
-    name: 'ZBANX',
-    logo: 'https://g.zbanx.com/assets/ico/favicon.ico',
+    name: 'Design',
     nav: [
       {
         title: '介绍',

@@ -15,8 +15,8 @@
     "baseUrl": "./",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "ui": ["./packages/ui/src/index.ts"],
-      "utils": ["./packages/utils/src/index.ts"]
+      "@design/ui": ["./packages/ui/src/index.ts"],
+      "@design/utils": ["./packages/utils/src/index.ts"]
     },
     "plugins": [{ "transform": "typescript-transform-paths", "afterDeclarations": true }]
   }
