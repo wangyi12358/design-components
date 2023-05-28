@@ -32,3 +32,4 @@ $ pnpm run exit:beta
 - [father](https://github.com/umijs/father)
 - [tailwindcss](https://tailwindcss.com/)
 - [daisyui](https://daisyui.com/)
+- [cva](https://cva.style/)
