@@ -2,8 +2,10 @@ import type { FC } from 'react';
 import React, { memo } from 'react';
 import classNames from 'classnames';
 import type { BaseProps } from '../_base';
+import { buttonCva } from './style';
+import type { VariantProps } from 'class-variance-authority';
 
-export interface ButtonProps extends BaseProps {
+export interface ButtonProps extends BaseProps, VariantProps<typeof buttonCva> {
   children?: React.ReactNode;
   onClick?: () => void;
   loading?: boolean;
@@ -12,18 +14,12 @@ export interface ButtonProps extends BaseProps {
 }
 
 const Button: FC<ButtonProps> = memo((props) => {
-  const { children, onClick, loading, className, style, block, icon } = props;
+  const { children, onClick, loading, className, style, icon, status, size } = props;
   return (
     <button
       style={style}
       onClick={onClick}
-      className={classNames(
-        className,
-        'btn btn-sm btn-outline',
-        { ['loading']: loading },
-        { ['btn-block']: block },
-        { ['gap-2']: !!icon },
-      )}
+      className={classNames(buttonCva({ status, size }), { ['loading']: loading }, className)}
     >
       {icon}
       {children}
