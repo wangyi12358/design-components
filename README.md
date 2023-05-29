@@ -1,5 +1,20 @@
 # Design components
 
+## ✨ Features
+- Lightweight UI design components.
+- Developed based on React.
+- Written in Typescript.
+
+## 🔨 Usage
+```tsx
+import React from 'react';
+import { Button } from '@design/ui';
+
+const App = () => (
+  <Button>Button</Button>
+);
+```
+
 ## 📦 Quick start
 
 ```bash
@@ -19,7 +34,7 @@ $ pnpm run enter:beta
 $ pnpm run exit:beta
 ```
 
-## Apps and Packages
+## 🖥 Apps and Packages
 - [ui](packages%2Fui): Component library code
 - [provider](packages%2Fprovider): i18n
 - [utils](packages%2Futils): A collection of utility functions
