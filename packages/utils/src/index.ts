@@ -1,2 +1,3 @@
-export { mergeProps } from './mergeProps';
-export { mergeLocale } from './mergeLocale';
+export { mergeProps } from './merge-props';
+export { mergeLocale } from './merge-locale';
+export { clsxMerge } from './clsx-merge';

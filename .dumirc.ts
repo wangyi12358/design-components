@@ -75,6 +75,8 @@ export default defineConfig({
   publicPath: '/',
   hash: false,
   ignoreMomentLocale: true,
+  tailwindcss: {},
+  plugins: ['@umijs/plugins/dist/tailwindcss'],
   // webpack5: {},
   // exportStatic: {},
   // mfsu: {},

@@ -1,6 +1,6 @@
 import { cva } from 'class-variance-authority';
 
-export const buttonCva = cva(['btn', 'btn-sm', 'btn-outline'], {
+export const buttonCva = cva(['btn'], {
   variants: {
     size: {
       lg: ['btn-lg'],

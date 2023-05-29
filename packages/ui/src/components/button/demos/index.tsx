@@ -28,13 +28,10 @@ const Icon = () => {
  */
 const Demo: React.FC<Props> = () => {
   return (
-    <div>
+    <div className="flex gap-2">
       <Button>按钮</Button>
-      <br />
       <Button loading>Loading</Button>
-      <br />
       <Button block>Block</Button>
-      <br />
       <Button icon={<Icon />}>Icon</Button>
     </div>
   );

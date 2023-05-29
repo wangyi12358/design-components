@@ -1,9 +1,9 @@
 import type { FC } from 'react';
 import React, { memo } from 'react';
-import classNames from 'classnames';
 import type { BaseProps } from '../_base';
 import { buttonCva } from './style';
 import type { VariantProps } from 'class-variance-authority';
+import { clsxMerge } from '@design/utils';
 
 export interface ButtonProps extends BaseProps, VariantProps<typeof buttonCva> {
   children?: React.ReactNode;
@@ -19,7 +19,7 @@ const Button: FC<ButtonProps> = memo((props) => {
     <button
       style={style}
       onClick={onClick}
-      className={classNames(buttonCva({ status, size }), { ['loading']: loading }, className)}
+      className={clsxMerge(buttonCva({ status, size }), { ['loading']: loading }, className)}
     >
       {icon}
       {children}
