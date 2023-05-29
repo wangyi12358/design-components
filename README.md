@@ -23,6 +23,7 @@ $ pnpm run exit:beta
 - [ui](packages%2Fui): Component library code
 - [provider](packages%2Fprovider): i18n
 - [utils](packages%2Futils): A collection of utility functions
+- [hooks](packages%2Futils): A collection of React hooks
 
 ## 🔗 Links
 
