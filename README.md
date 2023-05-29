@@ -33,3 +33,4 @@ $ pnpm run exit:beta
 - [tailwindcss](https://tailwindcss.com/)
 - [daisyui](https://daisyui.com/)
 - [cva](https://cva.style/)
+- [vitest](https://cn.vitest.dev/)

@@ -77,10 +77,6 @@ export default defineConfig({
   ignoreMomentLocale: true,
   tailwindcss: {},
   plugins: ['@umijs/plugins/dist/tailwindcss'],
-  // webpack5: {},
-  // exportStatic: {},
-  // mfsu: {},
-  // mfsu: !isDeploy ? {} : undefined,
   // 关闭 dynamicImport, 只会打包成一个umi.js文件, 用于减少线上环境serverless请求数
   extraBabelPlugins: isProduction ? ['babel-plugin-dynamic-import-node'] : [],
 });

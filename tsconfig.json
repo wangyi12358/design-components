@@ -10,7 +10,7 @@
     "**/demos",
     ".eslintrc.js",
     "tests",
-    "jest.config.js",
+    "vitest.*.ts",
     "**/fixtures",
     "**/__tests__/*",
     "packages/descriptions/src/demos/.tsx"
