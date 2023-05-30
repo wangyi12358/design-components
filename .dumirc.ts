@@ -14,7 +14,7 @@ const pkgList = readdirSync(join(process.cwd(), 'packages')).filter(
 const alias = pkgList.reduce((pre, pkg) => {
   return {
     ...pre,
-    [`@design/${pkg}`]: join(process.cwd(), 'packages', pkg, 'src'),
+    [`@light/${pkg}`]: join(process.cwd(), 'packages', pkg, 'src'),
   };
 }, {});
 

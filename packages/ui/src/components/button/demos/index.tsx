@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@design/ui';
+import { Button } from '@light/ui';
 
 type Props = {};
 

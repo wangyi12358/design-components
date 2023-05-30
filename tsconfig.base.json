@@ -15,10 +15,10 @@
     "baseUrl": "./",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "@design/ui": ["./packages/ui/src/index.ts"],
-      "@design/utils": ["./packages/utils/src/index.ts"],
-      "@design/hooks": ["./packages/hooks/src/index.ts"],
-      "@design/provider": ["./packages/provider/src/index.ts"]
+      "@light/ui": ["./packages/ui/src/index.ts"],
+      "@light/utils": ["./packages/utils/src/index.ts"],
+      "@light/hooks": ["./packages/hooks/src/index.ts"],
+      "@light/provider": ["./packages/provider/src/index.ts"]
     },
     "plugins": [{ "transform": "typescript-transform-paths", "afterDeclarations": true }]
   }

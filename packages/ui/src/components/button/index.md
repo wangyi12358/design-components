@@ -12,3 +12,7 @@ group:
 ## Size 不同尺寸
 
 <code src="./demos/size.tsx"></code>
+
+## Loading状态
+
+<code src="./demos/loading.tsx"></code>

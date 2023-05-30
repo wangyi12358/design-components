@@ -1,4 +1,4 @@
-# Design components
+# Light components
 
 ## ✨ Features
 - Lightweight UI design components.

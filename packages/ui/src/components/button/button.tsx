@@ -3,22 +3,32 @@ import React, { memo } from 'react';
 import type { BaseProps } from '../_base';
 import { buttonCva } from './style';
 import type { VariantProps } from 'class-variance-authority';
-import { clsxMerge } from '@design/utils';
+import { clsxMerge } from '@light/utils';
+import { useLoading } from '@light/hooks';
 
 export interface ButtonProps extends BaseProps, VariantProps<typeof buttonCva> {
   children?: React.ReactNode;
-  onClick?: () => void;
+  onClick?: () => Promise<void> | void;
   loading?: boolean;
   block?: boolean;
   icon?: React.ReactNode;
 }
 
 const Button: FC<ButtonProps> = memo((props) => {
-  const { children, onClick, loading, className, style, icon, status, size } = props;
+  const { children, onClick, className, style, icon, status, size } = props;
+  const [loading, setLoading] = useLoading(props.loading);
   return (
     <button
       style={style}
-      onClick={onClick}
+      onClick={() => {
+        const response = onClick?.();
+        if (response && !!response.then) {
+          setLoading(true);
+          response.finally(() => {
+            setLoading(false);
+          });
+        }
+      }}
       className={clsxMerge(buttonCva({ status, size }), { ['loading']: loading }, className)}
     >
       {icon}
