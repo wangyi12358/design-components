@@ -12,10 +12,11 @@ export interface ButtonProps extends BaseProps, VariantProps<typeof buttonCva> {
   loading?: boolean;
   block?: boolean;
   icon?: React.ReactNode;
+  active?: boolean;
 }
 
 const Button: FC<ButtonProps> = memo((props) => {
-  const { children, onClick, className, style, icon, status, size } = props;
+  const { children, onClick, className, style, icon, status, size, active } = props;
   const [loading, setLoading] = useLoading(props.loading);
   return (
     <button
@@ -29,7 +30,12 @@ const Button: FC<ButtonProps> = memo((props) => {
           });
         }
       }}
-      className={clsxMerge(buttonCva({ status, size }), { ['loading']: loading }, className)}
+      className={clsxMerge(
+        buttonCva({ status, size }),
+        { ['loading']: loading },
+        { ['btn-active']: active },
+        className,
+      )}
     >
       {icon}
       {children}

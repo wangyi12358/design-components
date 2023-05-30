@@ -13,5 +13,12 @@ export const buttonCva = cva(['btn'], {
       warning: ['btn-warning'],
       error: ['btn-error'],
     },
+    type: {
+      primary: ['btn-primary'],
+      secondary: ['btn-secondary'],
+      accent: ['btn-accent'],
+      ghost: ['btn-ghost'],
+      link: ['btn-link'],
+    },
   },
 });
