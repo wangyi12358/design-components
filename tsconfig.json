@@ -10,9 +10,8 @@
     "**/demos",
     ".eslintrc.js",
     "tests",
-    "vitest.*.ts",
+    "**/vitest.*.ts",
     "**/fixtures",
-    "**/__tests__/*",
-    "packages/descriptions/src/demos/.tsx"
+    "**/test/*"
   ]
 }
